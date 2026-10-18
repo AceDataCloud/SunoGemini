@@ -126,4 +126,4 @@ gemini extensions uninstall suno-by-ace-data-cloud
 
 [Hosted service source](https://github.com/AceDataCloud/SunoMCP) · [Official extension mechanism](https://geminicli.com/docs/extensions/releasing/) · [Validation and release boundary](VALIDATION.md)
 
-MIT. Suno and Google/Gemini names identify the integrated service and target client; their marks belong to their respective owners. Ace Data Cloud provides this integration independently.
+Extension code: MIT; official screenshot derivative: Apache-2.0, see [notices](THIRD_PARTY_NOTICES.md). Suno and Google/Gemini names identify the integrated service and target client; their marks belong to their respective owners. Ace Data Cloud provides this integration independently.

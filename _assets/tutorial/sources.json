@@ -21,6 +21,9 @@
     "source_url": "https://raw.githubusercontent.com/google-gemini/gemini-cli/ed96faedfd5571f055c44f2c9509d62321d1138d/docs/assets/gemini-screenshot.png",
     "page_url": "https://github.com/google-gemini/gemini-cli/blob/ed96faedfd5571f055c44f2c9509d62321d1138d/docs/assets/gemini-screenshot.png",
     "source_date": "2026-10-17 edit; original asset updated 2025-12-01, capture date/CLI version not stated",
-    "limits": "Google host reference; WriteFile and 2 MCP servers are not Suno extension execution."
+    "limits": "Google host reference; WriteFile and 2 MCP servers are not Suno extension execution.",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/google-gemini/gemini-cli/blob/ed96faedfd5571f055c44f2c9509d62321d1138d/LICENSE",
+    "modified_date": "2026-10-17"
   }
 ]

@@ -124,4 +124,4 @@ gemini extensions uninstall suno-by-ace-data-cloud
 
 [官方扩展机制](https://geminicli.com/docs/extensions/releasing/) · [验证与发布边界](../VALIDATION.md)
 
-MIT。Suno 与 Google/Gemini 名称用于识别服务与客户端，商标属于各权利人；此集成由 Ace Data Cloud 独立提供。
+扩展代码为 MIT；官方截图改编遵循 Apache-2.0，见[素材声明](../THIRD_PARTY_NOTICES.md)。Suno 与 Google/Gemini 名称用于识别服务与客户端，商标属于各权利人；此集成由 Ace Data Cloud 独立提供。
