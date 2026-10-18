@@ -1,0 +1,33 @@
+{
+  "name": "suno-by-ace-data-cloud",
+  "version": "0.1.0",
+  "description": "Suno music generation, custom songs, lyrics guidance, covers and same-task results via Ace Data Cloud. Independent integration, not Suno official.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "suno-by-ace-data-cloud": {
+      "httpUrl": "https://suno.mcp.acedata.cloud/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ACEDATACLOUD_SUNO_TOKEN}"
+      },
+      "includeTools": [
+        "suno_list_models",
+        "suno_list_actions",
+        "suno_get_lyric_format_guide",
+        "suno_generate_music",
+        "suno_generate_custom_music",
+        "suno_extend_music",
+        "suno_cover_music",
+        "suno_get_task",
+        "suno_get_tasks_batch"
+      ]
+    }
+  },
+  "settings": [
+    {
+      "name": "Ace Data Cloud Suno API Token",
+      "description": "Sign in or register at https://platform.acedata.cloud/console/applications?utm_source=gemini-cli&utm_medium=referral&utm_campaign=evergreen&utm_content=sunogemini_install_token . Open General application, copy or create a service API key with Suno access. Paste the raw token, without Bearer. Check current permissions, balance and pricing before generation.",
+      "envVar": "ACEDATACLOUD_SUNO_TOKEN",
+      "sensitive": true
+    }
+  ]
+}
