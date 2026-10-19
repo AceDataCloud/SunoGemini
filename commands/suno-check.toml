@@ -1,0 +1,4 @@
+description = "Read Suno reference information without generating music"
+prompt = """
+Activate the suno-music skill. Call only suno_list_models on the suno-by-ace-data-cloud MCP server and summarize the returned models. Do not search, generate music, submit a task, or infer account balance. Explain that the response is reference information only.
+"""
