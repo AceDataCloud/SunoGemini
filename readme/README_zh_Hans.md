@@ -8,21 +8,21 @@
 
 先安装 [Google Gemini CLI](https://geminicli.com/docs/get-started/installation/)并完成当前可用的模型登录。本包验证版本为 **0.64.0**。Google 当前将免费层/Google One 用户引导至 [Antigravity CLI](https://github.com/google-gemini/gemini-cli#readme)；本扩展面向 Gemini CLI，不承诺 Antigravity 兼容。
 
-官方扩展机制支持 Git 仓安装；本包正在准备官方目录条目。**公开仓、测试成功不代表已被官方目录收录。** 当前稳定 main 尚未包含扩展实现，审阅时使用实现分支：
-
-```bash
-gemini extensions install https://github.com/AceDataCloud/SunoGemini --ref codex/suno-native-extension
-```
-
-阅读扩展授权提示。它只连接现有 Suno 托管 MCP，加载音乐 Skill，并添加 `/suno-check`、`/suno-task`；没有 hooks，也不需要本地服务端。安装不会生成音乐。
-
-正式合并后的普通安装命令是：
+扩展名称 **suno-by-ace-data-cloud**，发布者 **AceDataCloud/SunoGemini**。从公开仓直接安装正式版本：
 
 ```bash
 gemini extensions install https://github.com/AceDataCloud/SunoGemini
 ```
 
-确认名称 **suno-by-ace-data-cloud**，来源 **AceDataCloud/SunoGemini**。关键词为 Suno、音乐、歌曲、歌词、翻唱，不能据此推断 Suno 官方背书。
+需要固定版本时指定 **v0.1.0**：
+
+```bash
+gemini extensions install https://github.com/AceDataCloud/SunoGemini --ref v0.1.0
+```
+
+[版本发布](https://github.com/AceDataCloud/SunoGemini/releases/tag/v0.1.0) · [官方目录](https://geminicli.com/extensions/)。目录每日索引与源码/包发布分开，发布和安装成功不代表搜索卡片已经出现。
+
+阅读扩展授权提示。它只连接现有 Suno 托管 MCP，加载音乐 Skill，并添加 `/suno-check`、`/suno-task`；没有 hooks，也不需要本地服务端。安装不会生成音乐。
 
 ## 2. 注册、登录并获取 API Token
 

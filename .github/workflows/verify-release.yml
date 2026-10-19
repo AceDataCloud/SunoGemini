@@ -1,0 +1,35 @@
+name: Verify published extension
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Published release tag'
+        required: true
+        default: 'v0.1.0'
+permissions:
+  contents: read
+jobs:
+  published-install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download pinned official Gemini CLI
+        run: |
+          curl -fsSL https://github.com/google-gemini/gemini-cli/releases/download/v0.64.0/gemini-cli-bundle.zip -o /tmp/gemini-cli.zip
+          echo '9d4ad33d15dcf35098919c69eb9d98b6dc640567f141d6fc4f8f053c8cbd8dae  /tmp/gemini-cli.zip' | sha256sum -c -
+          python3 -m zipfile -e /tmp/gemini-cli.zip /tmp/gemini-cli
+      - name: Verify fixed version and ordinary release installation without a Key
+        run: python3 tests/verify_release_install.py --cli /tmp/gemini-cli/gemini.js --tag "${{ inputs.tag }}" --output /tmp/published-install.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: published-install-verification
+          path: /tmp/published-install.json
