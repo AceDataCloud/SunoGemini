@@ -8,19 +8,21 @@ Create Suno songs, instrumental music, custom lyrics and covers from Gemini CLI,
 
 Install [Google Gemini CLI](https://geminicli.com/docs/get-started/installation/) and complete its current model authentication first. Tested with **Gemini CLI 0.64.0**. Google currently directs unpaid-tier / Google One users to [Antigravity CLI](https://github.com/google-gemini/gemini-cli#readme); this extension targets Gemini CLI and does not claim Antigravity compatibility.
 
-The official extension gallery supports Git repository installs. This package is being prepared for that directory; **a public source repository or passing tests does not mean the gallery has indexed it**. Until a reviewed version reaches `main`, install the review branch explicitly:
-
-```bash
-gemini extensions install https://github.com/AceDataCloud/SunoGemini --ref codex/suno-native-extension
-```
-
-Read the extension consent information. It connects only to the hosted Suno MCP endpoint, loads a Suno workflow skill and adds `/suno-check` and `/suno-task`. It has no hooks or local server dependency. Installing does not generate music.
-
-The normal install command after a stable merge will be:
+Install the released extension from its public repository:
 
 ```bash
 gemini extensions install https://github.com/AceDataCloud/SunoGemini
 ```
+
+For a reproducible installation, select version **v0.1.0**:
+
+```bash
+gemini extensions install https://github.com/AceDataCloud/SunoGemini --ref v0.1.0
+```
+
+The official gallery indexes tagged public extension repositories independently. A release or successful installation does not prove that its search card has appeared. [Versioned release](https://github.com/AceDataCloud/SunoGemini/releases/tag/v0.1.0) · [Official gallery](https://geminicli.com/extensions/).
+
+Read the extension consent information. It connects only to the hosted Suno MCP endpoint, loads a Suno workflow skill and adds `/suno-check` and `/suno-task`. It has no hooks or local server dependency. Installing does not generate music.
 
 Look for **suno-by-ace-data-cloud**, published from **AceDataCloud/SunoGemini**. The brand keywords are Suno, music, songs, lyrics and covers; this does not imply affiliation with Suno.
 

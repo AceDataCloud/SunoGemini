@@ -5,7 +5,7 @@ from pathlib import Path
 import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
-INCLUDE = ("gemini-extension.json", "GEMINI.md", "LICENSE", "README.md", "VALIDATION.md", "THIRD_PARTY_NOTICES.md", "commands", "skills", "readme", "_assets")
+INCLUDE = ("gemini-extension.json", "GEMINI.md", "LICENSE", "README.md", "VALIDATION.md", "THIRD_PARTY_NOTICES.md", "commands", "skills", "readme", "_assets", "docs")
 
 def build(output):
     output.parent.mkdir(parents=True, exist_ok=True)

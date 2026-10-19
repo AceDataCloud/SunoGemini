@@ -26,3 +26,10 @@ The gallery crawls public repositories daily when the root contains `gemini-exte
 ## Native model-provider boundary
 
 This extension adds Suno tools; it does not add an Ace main-model option. Current official AuthDialog has Google, Gemini API Key and Vertex AI. The maintainer stated Gemini-model/endpoint focus in https://github.com/google-gemini/gemini-cli/issues/1515#issuecomment-3145970081 . A native provider feature PR needs an existing maintainer-approved feature issue and the Google CLA under https://github.com/google-gemini/gemini-cli/blob/main/CONTRIBUTING.md . No agreement is signed by this package.
+
+
+## 2026-10-19 authorized publication
+
+The project owner authorized normal own-repository merge/release and official indexing. The initial source PR was merged only after exact-head checks/review/base/protection verification; no admin bypass or self-approval. A release-preparation PR updates ordinary/tag installation and adds a secret-free stable-release/default-install verifier. v0.1.0 publication and topic registration are executed after the current main CI succeeds; official search-card appearance is recorded separately, never inferred from a tag.
+
+No new publisher account is required by the documented public GitHub/topic crawler mechanism. Existing AceDataCloud organization identity has verified repository write capability. New agreements/CLA/brand attestation, if requested separately, are not accepted automatically.
