@@ -31,7 +31,7 @@ Look for **suno-by-ace-data-cloud**, published from **AceDataCloud/SunoGemini**.
 ## 2. Get an Ace API Token
 
 1. [Register or sign in to Ace Data Cloud](https://platform.acedata.cloud?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=sunogemini_readme_register).
-2. Open [Applications](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=sunogemini_readme_api_key). If **General application** does not exist, initialize it. Check Suno access and the current balance. A service application's key is limited to its service; a general key uses services the account is entitled to access.
+2. Open [Applications](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=sunogemini_readme_api_key). Open **General Application**. Check Suno access and the current balance. A service application's key is limited to its service; a general key uses services the account is entitled to access.
 3. Copy the **API KEY** value from the application card, or open **Manage Keys → Create** for a separate key named `Gemini CLI Suno`.
 
 ![Copy a masked application Key or open Manage Keys](../_assets/tutorial/get-api-key-en.png)

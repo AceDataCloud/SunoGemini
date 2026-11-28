@@ -29,7 +29,7 @@ gemini extensions install https://github.com/AceDataCloud/SunoGemini --ref v0.1.
 ## 2. 注册、登录并获取 API Token
 
 1. [注册或登录 Ace Data Cloud](https://platform.acedata.cloud?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=sunogemini_zh_register)。
-2. 打开 [Applications 应用列表](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=sunogemini_zh_api_key)。没有 **General application 通用应用**时先初始化，确认 Suno 权限和余额。服务应用 Key 限定对应服务；通用 Key 也受账号已开通范围限制。
+2. 打开 [Applications 应用列表](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=sunogemini_zh_api_key)。打开**通用应用**，确认 Suno 权限和余额。服务应用 Key 限定对应服务；通用 Key 也受账号已开通范围限制。
 3. 复制卡片 **API KEY**，或在 **Manage Keys 管理密钥 → Create 创建**中创建独立密钥，建议命名 `Gemini CLI Suno`。
 
 ![复制已有 Key 或进入密钥管理](../_assets/tutorial/get-api-key-en.png)
